@@ -71,8 +71,8 @@ The project follows these steps:
 
 The model achieved approximately:
 
-* **Test Accuracy:** 80.82%
-* **Test Loss:** 0.4462
+* **Test Accuracy:** 83.57%
+* **Test Loss:** 0.4709
 
 This means the model correctly classified approximately **81 out of 100 test images**.
 
@@ -84,7 +84,7 @@ This means the model correctly classified approximately **81 out of 100 test ima
 
 The training and validation accuracy increased during training, showing that the model learned useful image features.
 
-The final training accuracy was approximately **84.6%**, while validation accuracy was approximately **80.4%**.
+The final training accuracy was approximately **83.5%**, while validation accuracy was approximately **80.3%**.
 
 The relatively small gap between training and validation accuracy suggests that the model did not show severe overfitting.
 
