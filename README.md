@@ -64,72 +64,8 @@ The project follows these steps:
 12. Load the saved model
 13. Predict new images
 
----
 
-##  Image Preprocessing
-
-Images are resized to:
-
-**128 × 128 pixels**
-
-Pixel values are normalized using:
-
-**1 / 255**
-
-Data augmentation is also applied to the training images using:
-
-* Shear
-* Zoom
-* Horizontal Flip
-
-These techniques help the model learn from different variations of images and improve generalization.
-
----
-
-##  CNN Model Architecture
-
-The CNN model consists of:
-
-* Conv2D Layer – 32 filters
-* MaxPooling2D
-* Conv2D Layer – 64 filters
-* MaxPooling2D
-* Flatten
-* Dense Layer – 128 neurons
-* Dropout – 0.5
-* Output Layer – 1 neuron with Sigmoid activation
-
-### Why CNN?
-
-CNNs are commonly used for image classification because they can automatically learn important visual features such as:
-
-* Edges
-* Shapes
-* Colors
-* Patterns
-* Object features
-
----
-
-##  Model Compilation
-
-The model uses:
-
-* **Optimizer:** Adam
-* **Loss Function:** Binary Crossentropy
-* **Evaluation Metric:** Accuracy
-
-Since this is a binary classification problem, binary crossentropy with sigmoid activation is used.
-
----
-
-##  Early Stopping
-
-Early Stopping is used to prevent unnecessary training and reduce overfitting.
-
-The model monitors **validation loss** and stops training when the validation performance stops improving.
-
----
+------
 
 ##  Model Performance
 
